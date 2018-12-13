@@ -1,11 +1,11 @@
 package guru.springframework.sfgpetclinic.model;
 
-import sun.util.resources.LocaleData;
+import java.time.LocalDate;
 
 public class Pet {
     private PetType petType;
     private Owner owner;
-    private LocaleData birthday;
+    private LocalDate birthday;
 
     public PetType getPetType() {
         return petType;
@@ -23,11 +23,11 @@ public class Pet {
         this.owner = owner;
     }
 
-    public LocaleData getBirthday() {
+    public LocalDate getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(LocaleData birthday) {
+    public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
     }
 }
